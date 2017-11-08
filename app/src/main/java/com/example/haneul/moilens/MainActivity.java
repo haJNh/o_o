@@ -54,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
         SlidingPageAnimationListener animListener = new SlidingPageAnimationListener(); // 슬라이딩 애니메이션을 감시할 리스너
         translateLeftAnim.setAnimationListener(animListener);
         translateRightAnim.setAnimationListener(animListener);
-        //fadeInAnim.setAnimationListener(animListener);
-        //fadeOutAnim.setAnimationListener(animListener);
+        fadeInAnim.setAnimationListener(animListener);
+        fadeOutAnim.setAnimationListener(animListener);
 
         // 슬라이딩 페이지 이미지, 텍스트, 버튼
         logoutBtn=(Button)findViewById(R.id.logoutBtn);
@@ -126,12 +126,14 @@ public class MainActivity extends AppCompatActivity {
                 // 슬라이딩 메뉴 보이기
                 if(isPageOpen){
                    // page.startAnimation(translateRightAnim); // 페이지가 열려있으면 오른쪽으로 애니메이션
+                   // page2.startAnimation(fadeOutAnim);
                     page2.startAnimation(fadeOutAnim);
                 } else {
                    // page.setVisibility(View.VISIBLE); // 페이지가 닫혀 있으면 보이도록 한 후
-                    page2.setVisibility(View.VISIBLE);
+
                     //page.startAnimation(translateLeftAnim);  // 왼쪽으로 애니메이션
                     page2.startAnimation(fadeInAnim);
+                    page2.setVisibility(View.VISIBLE);
                 }
                 break;
             default:
@@ -144,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
 
         public void onAnimationEnd(Animation animation) {
             if (isPageOpen) {
-                page.setVisibility(View.INVISIBLE);
+               // page.setVisibility(View.INVISIBLE);
                 page2.setVisibility(View.INVISIBLE);
                 isPageOpen = false;
             } else {

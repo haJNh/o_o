@@ -8,15 +8,105 @@
     android:background="#FFFFFFFF"
     tools:context="com.example.haneul.moilens.MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/eyeAnalysisBtn"
-        android:padding="0dp"
-        android:src="@drawable/lemon"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
+            <ImageButton
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:id="@+id/eyeAnalysisBtn"
+                android:padding="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/lemon"/>
 
+            <ImageButton
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:id="@+id/search_LensBtn"
+                android:padding="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/lemon"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:id="@+id/eyeManagementTipBtn"
+                android:padding="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/lemon"/>
+
+            <ImageButton
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:id="@+id/cycleCheckBtn"
+                android:padding="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/lemon"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:id="@+id/lensReviewBtn"
+                android:padding="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/lemon"/>
+
+            <ImageButton
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:id="@+id/makeUpBtn"
+                android:padding="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/lemon"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 
     <LinearLayout
@@ -27,16 +117,12 @@
         android:background="#77000000"
         android:visibility="gone">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="hihi222222" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/page2"
         android:layout_width="150dp"
-        android:layout_height="match_parent"
+        android:layout_height="300dp"
         android:layout_gravity="right"
         android:background="@color/default_navy"
         android:orientation="vertical"
