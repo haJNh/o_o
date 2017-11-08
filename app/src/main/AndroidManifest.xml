@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EyeAnalysisPageAct"></activity>
+        <activity android:name=".EyeAnalysisPageAct" />
+        <activity android:name=".SearchLensPageAct"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.haneul.moilens.SearchLensPageAct">
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ColorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Color"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/redL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/notpressed"
+                        android:padding="5dp">
+
+                        <Button
+                            android:id="@+id/red"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/colorbutton"
+                            android:backgroundTint="#ff0000"
+                            android:text="RED"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/brownL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/notpressed"
+                        android:padding="5dp">
+
+                        <Button
+                            android:id="@+id/brown"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/colorbutton"
+                            android:backgroundTint="#713501"
+                            android:text="BROWN"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/grayL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/notpressed"
+                        android:padding="5dp">
+
+                        <Button
+                            android:id="@+id/gray"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/colorbutton"
+                            android:backgroundTint="#898989"
+                            android:text="GRAY"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/yellowL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/notpressed"
+                        android:padding="5dp">
+
+                        <Button
+                            android:id="@+id/yellow"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/colorbutton"
+                            android:backgroundTint="#ffd802"
+                            android:text="YELLOW"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/blueL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/notpressed"
+                        android:padding="5dp">
+
+                        <Button
+                            android:id="@+id/blue"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/colorbutton"
+                            android:backgroundTint="#3458e3"
+                            android:text="BLUE"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/greenL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/notpressed"
+                        android:padding="5dp">
+
+                        <Button
+                            android:id="@+id/green"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/colorbutton"
+                            android:backgroundTint="#0bca4a"
+                            android:text="BLUE"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ea888787"></View>
+
+        <LinearLayout
+            android:id="@+id/DiameterLayouot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Diameter"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/DiameterSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="90" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1일" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1주" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1달" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="없음" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ea888787"></View>
+
+        <LinearLayout
+            android:id="@+id/periodLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Period"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/periodSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="90" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="11mm" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="12mm" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="13mm" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="14mm" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ea888787"></View>
+
+
+        <LinearLayout
+
+            android:id="@+id/OptionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Option"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:id="@+id/astigmatism"
+                    android:text="난시" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/oxygen"
+                    android:text="산소투과" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="50dp"
+            android:background="#ffffff"
+            android:text="Search"
+            android:textColor="#b0b0fc"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/resultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="bold"
+                android:layout_width="wrap_content"
+                android:padding="20dp"
+                android:layout_height="wrap_content"
+                android:text="조건검색"
+                android:textSize="30dp" />
+            <ImageButton
+                android:layout_margin="10dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:id="@+id/openSearch"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/opensearch"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

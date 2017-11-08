@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     // 기본 메인 화면 안의 객체들
     private ImageButton eyeAnalysisBtn;
+    private ImageButton searchLensBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -120,6 +121,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        searchLensBtn=(ImageButton) findViewById(R.id.searchLensBtn);
+        searchLensBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent( getApplicationContext(), SearchLensPageAct.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 
