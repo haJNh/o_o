@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 최종 디자인 컬러칩 -->
+    <color name="default_navy">#34314c</color>
+    <color name="default_pink">#ff7473</color>
+    <color name="default_blue">#47b8e0</color>
+    <color name="default_yellow">#ffc952</color>
+    <color name="default_white">#ffffff</color>
+    <color name="default_grey">#787878</color>
+
+</resources>
