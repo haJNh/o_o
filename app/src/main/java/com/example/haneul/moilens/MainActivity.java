@@ -1,5 +1,6 @@
 package com.example.haneul.moilens;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -20,11 +22,10 @@ public class MainActivity extends AppCompatActivity {
     private Animation translateRightAnim; // 오른쪽으로 이동 애니메이션 객체
     private Animation fadeInAnim; // 점점 선명하게 보여주는 애니메이션 객체
     private Animation fadeOutAnim; // 점점 사라지도록 하는 애니메이션 객체
-    private LinearLayout page; // 슬라이딩으로 보여줄 페이지
-    private LinearLayout page2; // 슬라이딩으로 보여줄 페이지(왼쪽 반투명 레이어)
+   // private LinearLayout page; // 슬라이딩으로 보여줄 페이지
+    private LinearLayout page2; // 슬라이딩으로 보여줄 페이지
 
     // 슬라이딩 페이지 안의 객체들
-
     private Button logoutBtn;
     private TextView userNameText;
     private TextView myPageText;
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView mySteamedUpListText;
 
 
+    // 기본 메인 화면 안의 객체들
+    private ImageButton eyeAnalysisBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setCustomView(R.layout.abs_layout);
 
         // 슬라이딩 페이지
-        page = (LinearLayout) findViewById(R.id.page);
+        //page = (LinearLayout) findViewById(R.id.page);
         page2 = (LinearLayout) findViewById(R.id.page2);
         translateLeftAnim = AnimationUtils.loadAnimation(this, R.anim.translate_left);
         translateRightAnim = AnimationUtils.loadAnimation(this, R.anim.translate_right);
@@ -105,6 +108,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.d("menu:","mySteamedUpListText");
+            }
+        });
+
+        // 기본 메인 화면 객체들 선언
+        eyeAnalysisBtn=(ImageButton) findViewById(R.id.eyeAnalysisBtn);
+        eyeAnalysisBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent( getApplicationContext(), EyeAnalysisPageAct.class);
+                startActivity(intent);
             }
         });
 

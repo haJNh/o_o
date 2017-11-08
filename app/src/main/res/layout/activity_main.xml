@@ -19,8 +19,8 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:layout_width="140dp"
-                android:layout_height="140dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:id="@+id/eyeAnalysisBtn"
                 android:padding="0dp"
                 android:layout_marginTop="20dp"
@@ -31,8 +31,8 @@
                 android:src="@drawable/lemon"/>
 
             <ImageButton
-                android:layout_width="140dp"
-                android:layout_height="140dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:id="@+id/search_LensBtn"
                 android:padding="0dp"
                 android:layout_marginTop="20dp"
@@ -50,8 +50,8 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:layout_width="140dp"
-                android:layout_height="140dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:id="@+id/eyeManagementTipBtn"
                 android:padding="0dp"
                 android:layout_marginTop="20dp"
@@ -62,8 +62,8 @@
                 android:src="@drawable/lemon"/>
 
             <ImageButton
-                android:layout_width="140dp"
-                android:layout_height="140dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:id="@+id/cycleCheckBtn"
                 android:padding="0dp"
                 android:layout_marginTop="20dp"
@@ -81,8 +81,8 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:layout_width="140dp"
-                android:layout_height="140dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:id="@+id/lensReviewBtn"
                 android:padding="0dp"
                 android:layout_marginTop="20dp"
@@ -93,8 +93,8 @@
                 android:src="@drawable/lemon"/>
 
             <ImageButton
-                android:layout_width="140dp"
-                android:layout_height="140dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:id="@+id/makeUpBtn"
                 android:padding="0dp"
                 android:layout_marginTop="20dp"

@@ -11,5 +11,6 @@
     <color name="default_yellow">#ffc952</color>
     <color name="default_white">#ffffff</color>
     <color name="default_grey">#787878</color>
+    <color name="highlight_color">#96abff</color>
 
 </resources>
