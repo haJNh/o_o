@@ -208,14 +208,7 @@ public class SearchLensPageAct extends AppCompatActivity {
                 chahgeButton(lensColors[5], lensColorsLayout[5]);
             }
         });
-        // /lensColorsLayout[0]=(LinearLayout) findViewById(R.id.redL);
-        // /lensColorsLayout[1]=(LinearLayout) findViewById(R.id.brownL);
 
-        //lensColorsString[0]="Red";
-        // L
-        /*for(int i=0;i<j;i++){
-            lensColors[i]=(Button)findViewById(R.id.);
-        }*/
 
     }
 }

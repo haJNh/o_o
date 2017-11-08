@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".EyeAnalysisPageAct" />
-        <activity android:name=".SearchLensPageAct"></activity>
+        <activity android:name=".SearchLensPageAct" />
+        <activity android:name=".CustomLensRcdPage.CustomLensRcdPageAct"></activity>
     </application>
 
 </manifest>
