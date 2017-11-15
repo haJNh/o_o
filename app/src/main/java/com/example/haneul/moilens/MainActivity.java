@@ -142,21 +142,21 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Log.d("t","d");
         // 현재 선택된 메뉴
         int curId = item.getItemId();
         // 메뉴에 따른 처리
         switch (curId) {
-            case R.id.slidingMenu:
+            case R.id.menu_spot:
                 // 슬라이딩 메뉴 보이기
                 if(isPageOpen){
                    // page.startAnimation(translateRightAnim); // 페이지가 열려있으면 오른쪽으로 애니메이션
                    // page2.startAnimation(fadeOutAnim);
-                    page2.startAnimation(fadeOutAnim);
+                    page2.startAnimation(translateRightAnim);
                 } else {
                    // page.setVisibility(View.VISIBLE); // 페이지가 닫혀 있으면 보이도록 한 후
-
                     //page.startAnimation(translateLeftAnim);  // 왼쪽으로 애니메이션
-                    page2.startAnimation(fadeInAnim);
+                    page2.startAnimation(translateLeftAnim);
                     page2.setVisibility(View.VISIBLE);
                 }
                 break;

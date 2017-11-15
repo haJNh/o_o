@@ -3,9 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/slidingMenu"
-        android:icon="@drawable/menuicon1"
-        android:title="메뉴"
+        android:id="@+id/menu_spot"
+        android:icon="@drawable/menu_spot"
+        android:title=""
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_box"
+        android:icon="@drawable/menu_box"
+        android:title=""
         app:showAsAction="always" />
 
 </menu>
