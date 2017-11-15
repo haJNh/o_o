@@ -20,9 +20,9 @@
 
             <Button
                 android:layout_width="150dp"
-                android:layout_height="200dp"
+                android:layout_height="150dp"
                 android:id="@+id/eyeAnalysisBtn"
-                android:padding="0dp"
+                android:padding="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="10dp"
@@ -30,14 +30,14 @@
                 android:layout_weight="1"
                 android:background="#ffffffff"
                 android:text="내눈분석"
-                android:textSize="18dp"
-                android:drawableTop="@drawable/menu1_ic_ea"/>
+                android:textSize="15dp"
+                android:drawableTop="@drawable/menu1_ic_ea" />
 
             <Button
                 android:layout_width="150dp"
-                android:layout_height="200dp"
+                android:layout_height="150dp"
                 android:id="@+id/searchLensBtn"
-                android:padding="0dp"
+                android:padding="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="20dp"
@@ -45,7 +45,7 @@
                 android:layout_weight="1"
                 android:background="#ffffffff"
                 android:text="렌즈찾기"
-                android:textSize="18dp"
+                android:textSize="15dp"
                 android:drawableTop="@drawable/menu2_ic_es"/>
 
         </LinearLayout>
@@ -115,28 +115,19 @@
     </LinearLayout>
 
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:id="@+id/page"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#77000000"
-        android:visibility="gone">
-
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/page2"
         android:layout_width="300dp"
         android:layout_height="match_parent"
         android:layout_gravity="left"
-        android:background="@color/default_navy"
+        android:background="@color/default_black"
         android:orientation="vertical"
         android:visibility="gone">
 
 
         <LinearLayout
-            android:background="@color/default_navy"
+            android:background="@color/default_black"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:orientation="vertical">
@@ -149,7 +140,8 @@
                 android:layout_marginRight="10dp"
                 android:text="Logout"
                 android:id="@+id/logoutBtn"
-                android:textColor="@color/default_blue"
+                android:textColor="@color/default_blue_green"
+                android:background="@color/default_white"
                 android:textSize="16dp" />
 
             <TextView

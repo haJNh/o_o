@@ -1,15 +1,20 @@
 package com.example.haneul.moilens;
 
+import android.content.Context;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.Toast;
+
+import com.tsengvn.typekit.TypekitContextWrapper;
 
 public class SearchLensPageAct extends AppCompatActivity {
 
@@ -25,6 +30,11 @@ public class SearchLensPageAct extends AppCompatActivity {
     SeekBar diameterSeekBar, periodSeekBar;
     CheckBox astigmatism,oxygen;
 
+    // 2017-11-15 : 폰트 적용 메소드
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(TypekitContextWrapper.wrap(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +42,11 @@ public class SearchLensPageAct extends AppCompatActivity {
         setContentView(R.layout.activity_search_lens_page);
 
 
+        if(Build.VERSION.SDK_INT >= 21){
+            getSupportActionBar().hide();
+        }else if(Build.VERSION.SDK_INT <21){
+            requestWindowFeature(Window.FEATURE_NO_TITLE);
+        }
 
         searchLayout = (LinearLayout) findViewById(R.id.searchLayout);
         resultLayout = (LinearLayout) findViewById(R.id.resultLayout);

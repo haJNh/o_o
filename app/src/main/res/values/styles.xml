@@ -13,7 +13,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/default_black</item>
         <item name="colorPrimaryDark">#000000</item>
-        <item name="colorAccent">@color/default_pink</item>>
+        <item name="colorAccent">@color/default_pink</item>
     </style>
 
 

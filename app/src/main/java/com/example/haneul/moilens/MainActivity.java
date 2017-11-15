@@ -14,6 +14,8 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.tsengvn.typekit.TypekitContextWrapper;
+
 public class MainActivity extends AppCompatActivity {
 
     // 슬라이딩 메뉴 객체
@@ -44,6 +46,13 @@ public class MainActivity extends AppCompatActivity {
     // 기본 메인 화면 안의 객체들
     private Button eyeAnalysisBtn;
     private Button searchLensBtn;
+
+
+    // 2017-11-15 : 폰트 적용 메소드
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(TypekitContextWrapper.wrap(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

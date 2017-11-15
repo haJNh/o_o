@@ -1,16 +1,27 @@
 package com.example.haneul.moilens;
 
+import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 
 import com.example.haneul.moilens.CustomLensRcdPage.CustomLensRcdPageAct;
+import com.tsengvn.typekit.TypekitContextWrapper;
 
 public class EyeAnalysisPageAct extends AppCompatActivity {
 
     Button analysisStartBtn;
+
+
+    // 2017-11-15 : 폰트 적용 메소드
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(TypekitContextWrapper.wrap(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,5 +36,11 @@ public class EyeAnalysisPageAct extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        if(Build.VERSION.SDK_INT >= 21){
+            getSupportActionBar().hide();
+        }else if(Build.VERSION.SDK_INT <21){
+            requestWindowFeature(Window.FEATURE_NO_TITLE);
+        }
     }
 }
