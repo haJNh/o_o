@@ -1,11 +1,11 @@
 package com.example.haneul.moilens;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -34,9 +34,16 @@ public class MainActivity extends AppCompatActivity {
     private TextView mySteamedUpListText;
 
 
+    private LayoutInflater actionBarInflater;
+    private LinearLayout actionBarLayout;
+    private ImageButton menu_spot;
+    private ImageButton menu_box;
+
+
+
     // 기본 메인 화면 안의 객체들
-    private ImageButton eyeAnalysisBtn;
-    private ImageButton searchLensBtn;
+    private Button eyeAnalysisBtn;
+    private Button searchLensBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +53,28 @@ public class MainActivity extends AppCompatActivity {
         // 커스텀 액션바 사용
         getSupportActionBar().setDisplayOptions(android.support.v7.app.ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.abs_layout);
+        actionBarInflater  = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        actionBarLayout = (LinearLayout) actionBarInflater.inflate(R.layout.abs_layout, null);
+        menu_spot=(ImageButton)findViewById(R.id.menu_spot);
+        menu_spot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(isPageOpen){
+                    page2.startAnimation(fadeOutAnim);
+                } else {
+                    page2.startAnimation(fadeInAnim);
+                    page2.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+        menu_box=(ImageButton)findViewById(R.id.menu_box);
+        menu_box.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
 
         // 슬라이딩 페이지
         //page = (LinearLayout) findViewById(R.id.page);
@@ -113,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // 기본 메인 화면 객체들 선언
-        eyeAnalysisBtn=(ImageButton) findViewById(R.id.eyeAnalysisBtn);
+        eyeAnalysisBtn=(Button) findViewById(R.id.eyeAnalysisBtn);
         eyeAnalysisBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -122,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        searchLensBtn=(ImageButton) findViewById(R.id.searchLensBtn);
+        searchLensBtn=(Button) findViewById(R.id.searchLensBtn);
         searchLensBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -134,37 +163,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        Log.d("t","d");
-        // 현재 선택된 메뉴
-        int curId = item.getItemId();
-        // 메뉴에 따른 처리
-        switch (curId) {
-            case R.id.menu_spot:
-                // 슬라이딩 메뉴 보이기
-                if(isPageOpen){
-                   // page.startAnimation(translateRightAnim); // 페이지가 열려있으면 오른쪽으로 애니메이션
-                   // page2.startAnimation(fadeOutAnim);
-                    page2.startAnimation(translateRightAnim);
-                } else {
-                   // page.setVisibility(View.VISIBLE); // 페이지가 닫혀 있으면 보이도록 한 후
-                    //page.startAnimation(translateLeftAnim);  // 왼쪽으로 애니메이션
-                    page2.startAnimation(translateLeftAnim);
-                    page2.setVisibility(View.VISIBLE);
-                }
-                break;
-            default:
-                break;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 
     private class SlidingPageAnimationListener implements Animation.AnimationListener {
 

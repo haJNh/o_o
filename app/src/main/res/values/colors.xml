@@ -13,4 +13,13 @@
     <color name="default_grey">#787878</color>
     <color name="highlight_color">#96abff</color>
 
+    <!-- 디자인 컬러칩 -->
+    <color name="default_black">#3C3C45</color>
+    <color name="default_blue_green">#3BA6CE</color>
+    <color name="default_orange">#FF8B5F</color>
+    <color name="default_apricot">#F4E3DC</color>
+    <color name="highlight_blue">#96abff</color>
+
+
+
 </resources>

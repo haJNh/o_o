@@ -3,14 +3,15 @@
     <!-- Base application theme. -->
     <style name="Theme.Speech" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/default_navy</item>
+        <item name="colorPrimary">@color/default_black</item>
         <item name="colorPrimaryDark">#000000</item>
         <item name="colorAccent">@color/default_pink</item>
+
     </style>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/default_navy</item>
+        <item name="colorPrimary">@color/default_black</item>
         <item name="colorPrimaryDark">#000000</item>
         <item name="colorAccent">@color/default_pink</item>>
     </style>

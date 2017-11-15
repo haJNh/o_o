@@ -18,9 +18,9 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <ImageButton
+            <Button
                 android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_height="200dp"
                 android:id="@+id/eyeAnalysisBtn"
                 android:padding="0dp"
                 android:layout_marginTop="20dp"
@@ -28,11 +28,14 @@
                 android:layout_marginRight="10dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@drawable/lemon"/>
+                android:background="#ffffffff"
+                android:text="내눈분석"
+                android:textSize="18dp"
+                android:drawableTop="@drawable/menu1_ic_ea"/>
 
-            <ImageButton
+            <Button
                 android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_height="200dp"
                 android:id="@+id/searchLensBtn"
                 android:padding="0dp"
                 android:layout_marginTop="20dp"
@@ -40,7 +43,10 @@
                 android:layout_marginRight="20dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@drawable/lemon"/>
+                android:background="#ffffffff"
+                android:text="렌즈찾기"
+                android:textSize="18dp"
+                android:drawableTop="@drawable/menu2_ic_es"/>
 
         </LinearLayout>
 
@@ -121,9 +127,9 @@
 
     <LinearLayout
         android:id="@+id/page2"
-        android:layout_width="150dp"
-        android:layout_height="300dp"
-        android:layout_gravity="right"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
         android:background="@color/default_navy"
         android:orientation="vertical"
         android:visibility="gone">
